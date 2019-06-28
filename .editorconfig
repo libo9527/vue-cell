@@ -1,0 +1,17 @@
+root = true
+
+[*]
+charset = utf-8
+# 使用空格进行缩进
+indent_style = space
+# 缩进两个空格
+indent_size = 2
+# 换行符：
+# - win：crlf
+# - linux/unix：lf
+# - mac：cr
+end_of_line = lf
+# 文件最后一行为空行
+insert_final_newline = true
+# 剪裁尾部空格
+trim_trailing_whitespace = true
