@@ -45,7 +45,12 @@ package.json 是依赖管理文件。
 
 - 依赖版本中 `^a.b.c` 表示最低版本为 a.b.c
 
-##  Webpack
+### 需要重启项目的情况
+
+- 修改 webpack 配置
+- 修改 eslint rule
+
+## Webpack
 
 ### webpack 是如何进行编译的
 
@@ -97,9 +102,23 @@ src/common/stylus/base.styl
   })    
   ```
 
+### Vue 中 data 为一个函数的原因
+
+如果 data 是一个属性，即普通的对象，则多个实例将使用同一个对象，一个组件对 data 的改动将会影响每个组件的显示。
+
 ## CSS
 
 - a 标签默认的 display 是 inline，但只有当点击 a 标签中文字对应的区域时才会跳转，如果想要将区域扩展到外部的 div，则需要将 display 设置为 block。
+
+### 文本单行溢出显示省略号
+
+```css
+white-space: nowrap
+overflow: hidden
+text-overflow: ellipsis
+```
+
+
 
 ### 伪元素 after
 
